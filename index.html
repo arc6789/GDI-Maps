@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	 <meta charset="utf-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Anusuya Roy Choudhury" />
+      <!-- Date: 2014-11-21 -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Amatic+SC|Handlee' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Amatic+SC|Handlee' rel='stylesheet' type='text/css'>
+    
+    <!-- <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' /> -->
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' rel='stylesheet' />
+    
+    <!-- <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' rel='stylesheet' /> -->
+    <style type="text/css">
+     a{
+        font-family: 'Indie Flower', cursive; 
+        font-weight: bold; 
+        font-size: 19px;
+      }
+     #map { 
+        position:relative;
+        margin: 0 0 0 0; 
+        width:75%; 
+        height: 500px; 
+        float:left;
+        background-color:#E8E8E8; 
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black   
+      }
+
+      .map-info{
+        padding-top: 10px;
+        background-color:#191919;
+        float:right; 
+        width:25%;
+        height:500px; 
+        border:2px solid black;
+        overflow:scroll;
+        } /*#E8E8E8*/
+
+        h2{
+        color:white; 
+        font-family: 'Tangerine',serif}
+
+      h3,h1{
+        margin-top: 30px;
+        /*text-align: center; */
+        font-family: 'Indie Flower', cursive; 
+        font-weight: bold; 
+         
+        color:#EF5264;
+      }
+
+      h4{
+        border-bottom:2px solid #266182; 
+        width:210px; 
+        line-height:2; 
+        letter-spacing:.127em; 
+        margin-bottom:20px; 
+        font-size:13px; 
+        font-weight:600; 
+        color:#266182;
+      } /*95cd69*/
+      
+      ol{
+        margin:0;
+        padding-left: 2px;
+      }
+
+      ol p, ol h5{
+        color:white; 
+        margin:5px; 
+        font-size: 13px;
+        margin-left: 0.5rem}
+      
+
+      .panel{
+        margin-bottom: 2px; 
+        padding:0;font-family: 'Indie Flower', cursive; 
+        box-shadow: 0px 4px 0px #aaa;
+      }
+
+      .sub-nav{padding-left: 25%; 
+        padding-right: 25%;
+      }
+      
+      .row{width:95%; margin:auto;}
+     
+    </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="row1 row"> <!--Maps Section -->
+      <section>
+        <a name="gmap"></a>
+        <h1 class="text-center"> Locate Us <img src="images/locat.png" style="width:30px; height:32px"> </h1>
+        <div class="row">
+          <div class="large-11 column;" style="margin:auto">
+            <div style="background-color:#3887BE; border-radius:1em 1em 0 0 ">
+            <p style="margin:0 0 0 40px; color:white; ">Join us at the following locations!</p>
+            </div>
+            <div id='map'></div>
+            <div class="map-info" id="info" style="">
+            <ol></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!--End of MAps!-->
+<button id="but"></button>
+
+  </div>
+   
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/meetup-map.js"></script>
+</body>
+</html>
