@@ -4,13 +4,7 @@ $(document).ready(function(){
       var map = L.mapbox.map('map', 'arc6789.78f63ca4').setView([37.7833, -122.4167], 13);  /*examples.map-i86nkdio*/ 
   
 
-    document.getElementById('but').onclick = function(e) {
-    e.preventDefault();
-    
-    
-       mgeojson.clearLayers();
-        map.setView([37.7833, -122.4167], 16);
-    }
+  
 
 
       var MEETUP_URL = "http://api.meetup.com/2/events?key=547995146f21675d2a7e111f665777&offset=0&format=json&limited_events=False&group_urlname=Women-Who-Code-SF&photo-host=public&page=20&fields=&order=time&desc=false&status=upcoming&callback=";
@@ -56,27 +50,22 @@ $(document).ready(function(){
                         'marker-size': 'small',
                         'marker-color': '#f95a61', /*#f95a61 #BE9A6B*/
                         // 'marker-symbol': 'cafe',
+                    }
                         
-                  });
-                  
-                
+                  })
 
                   mgeojson.addTo(map);
                   htmlString += '<h5><a href=\"www.google.com\"' + item.link + '" target="_blank">' + item.name + '</a></h5>';
                   htmlString += '<p> Address: ' + item.venue.address_1 + '</br></p>' ;
                   // htmlString += 'lon ' + item.venue.lon + ' lat ' + item.venue.lat + "<br/>";
                   htmlString += '<p>'+ convert(item.time)+'</br></p>';
-                  htmlString += '<button> Click this</button>'; 
+                  // htmlString += '<button> Click this</button>'; 
                   htmlString += '<hr>';
 
                   $("ol").append(htmlString);
                   htmlString="";
 
-                  $("button").click(function(){
-                   mgeojson.clearLayers();
-
-                    
-                  });
+                  
 
 
 
