@@ -2,13 +2,7 @@
 $(document).ready(function(){
       L.mapbox.accessToken = 'pk.eyJ1IjoiYXJjNjc4OSIsImEiOiIyUU9lcmdJIn0.nZKA7rHTaVFz-M2oTt2ZMA';
       var map = L.mapbox.map('map', 'arc6789.78f63ca4').setView([37.7833, -122.4167], 13);  /*examples.map-i86nkdio*/ 
-      // var myLayer = L.mapbox.featureLayer().addTo(map); 
-        // 37.3382° N, 121.8863° W
-
-    // $("#but").click(function(){
-    //   alert("hi!");
-    //   markerLayer.clearLayers();
-    // });
+  
 
     document.getElementById('but').onclick = function(e) {
     e.preventDefault();
