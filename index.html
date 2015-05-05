@@ -6,6 +6,7 @@
     <meta name="author" content="Anusuya Roy Choudhury" />
     <title>Maps</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Unkempt|Muli|Julius+Sans+One|Amatic+SC|Handlee|Capriola' rel='stylesheet' type='text/css'>
 	  
     <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Amatic+SC|Handlee' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
@@ -33,6 +34,14 @@
         border-bottom: 2px solid black   
       }
 
+      .some{font-family: 'Capriola', 
+    sans-serif;
+  }
+
+  .navbar-default{opacity:0.9; background-color: #414247}
+
+  p{font-family: 'Muli', sans-serif;}
+
       .map-info{
         padding-top: 10px;
         background-color:#191919;
@@ -45,12 +54,14 @@
 
         h2{
         color:white; 
-        font-family: 'Tangerine',serif}
+        font-family: 'Capriola', 
+    sans-serif;}
 
       h3,h1{
         margin-top: 30px;
         /*text-align: center; */
-        font-family: 'Indie Flower', cursive; 
+        font-family:'Capriola', 
+    sans-serif;
         font-weight: bold; 
          
         color:#EF5264;
@@ -96,7 +107,32 @@
 </head>
 <body>
   <div class="container">
-    <div class="row1 row"> <!--Maps Section -->
+     <!--Maps Section -->
+      <!-- <nav class="navbar navbar-default navbar-fixed-top" >
+  <div class="container" style="display:inline">
+    <ul><li>hi</li><li>hi</li><li>hi</li></ul>
+  
+  </div> -->
+</nav>
+<div class="row1 row">
+      <section>
+        <a name="gmap"></a>
+        <h1 class="text-center"> Locate Us <img src="images/locat.png" style="width:30px; height:32px"> </h1>
+        <div class="row">
+          <div class="large-11 column;" style="margin:auto">
+            <div style="background-color:#3887BE; ">
+            <p style="margin:0 0 0 40px; color:white; ">Join us at the following locations!</p>
+            </div>
+            <div id='map'></div>
+            <div class="map-info" id="info" style="">
+            <ol></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><!--End of MAps!-->
+
+<!-- <div class="row1 row">
       <section>
         <a name="gmap"></a>
         <h1 class="text-center"> Locate Us <img src="images/locat.png" style="width:30px; height:32px"> </h1>
