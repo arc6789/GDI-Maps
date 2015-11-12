@@ -129,31 +129,8 @@ ol p, ol h5{
   padding:5px
 }
 
-.instructions-row {
-  padding:0 50px 10px 50px;
-}
-
-.instructions-row ul{
-  font-family: 'Roboto', 
-  sans-serif; font-size:16px; 
-  color:#3D0158; padding-bottom:10px;
-  padding-top:20px;
-  border-top:4px solid #A6A5A3;
-  padding-left:10px
-}
-
-.button-footer-row{
-  padding:0px 50px 50px 50px
-}
-
-.button-footer-row{
-  float:right; width:100px
-}
 
 @media(max-width:800px){
-  .instructions-row{
-    padding:0 10px 10px 10px !important;
-  }
   .row{
     width:100% !important;
   }
